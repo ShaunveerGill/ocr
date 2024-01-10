@@ -1,14 +1,19 @@
 import easyocr
+import sys
 
 def ocrRes(image_path):
-
+    res = ''
+    print('hllo')
     reader = easyocr.Reader(['en'])
     result = reader.readtext(image_path)
-    print('hello')
-    for (bbox, text, prob) in result:
-        print('loop')
-        print(f'Text: {text}, Probability: {prob}')
+    for items in result:
+        res += items[1] + ' '
+    return res.strip()
 
-imagepath = 'path/to/file' 
-ocrRes(imagepath)
+if __name__ == "__main__":
 
+    image_path = '/Users/shaun/Desktop/download.jpg'
+
+    #image_path = sys.argv[1]
+    result = ocrRes(image_path)
+    print(result)
