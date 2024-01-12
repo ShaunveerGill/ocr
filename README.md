@@ -1,4 +1,13 @@
-# Quick-Text
+#Quick-Text
+
+## Table of Contents
+- [Overview](#overview)
+- [Demo](#Demo)
+- [How it Works](#howitworks)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+
+## Overview
 
 Quick-Text allows user to convert images into text. This can be useful for a 
 wide array of purposes such as converting notes paper to digital, text 
@@ -6,19 +15,14 @@ extraction from documents, and allows user to search through images. This
 project utilizes a react frontend, a Node.js backend, and the EasyOcr library
 to process the images. 
 
-# Demo
+## Demo
 
-# How it Works
+## How it Works
 
 When a image it uploaded, it is processed and sent to the Node.js backend. Since
 Since, EasyOcr is a python library, a child process is spawend and will call on 
 the python script to convert the image into text. The result is then returned and
 outputed in the frontend. 
-
-## Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
 
 ## Prerequisites
 
