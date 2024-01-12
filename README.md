@@ -16,6 +16,8 @@ project utilizes a react frontend, a Node.js backend, and the EasyOcr library
 to process the images. 
 
 ## Demo
+![Screen Recording](https://youtu.be/4J7y4ctY35c)
+
 
 ## How it Works
 
