@@ -41,10 +41,16 @@ const App = () => {
     <div className="bg-white min-h-screen">
       <header className="bg-white border-b border-gray-300">
         <nav className="mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only"></span>
               <img className="h-14 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+            </a>
+          </div> */}
+          <div className="flex items-center">
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Quick-Text</span>
+              <div className="text-4xl font-bold text-indigo-600">Quick-Text</div>
             </a>
           </div>
           <div className="flex space-x-4">
