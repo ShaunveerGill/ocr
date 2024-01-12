@@ -3,7 +3,6 @@ import sys
 
 def ocrRes(image_path):
     res = ''
-    print('hllo')
     reader = easyocr.Reader(['en'])
     result = reader.readtext(image_path)
     for items in result:
@@ -12,8 +11,7 @@ def ocrRes(image_path):
 
 if __name__ == "__main__":
 
-    image_path = '/Users/shaun/Desktop/download.jpg'
+    image_path = sys.argv[1]
 
-    #image_path = sys.argv[1]
     result = ocrRes(image_path)
     print(result)
